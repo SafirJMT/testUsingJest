@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <button id="getNumber">Generate Number</button>
+    <div id="number"></div>
+
+    <script type="module">
+            import {NumberService} from './numberService.js';
+            const numberService = new NumberService();
+            const button = document.getElementById('getNumber')
+            
+            button.addEventListener('click', function(){
+                
+            
+                number.textContent= numberService.generateNumber();
+            })
+    </script>
+
+</body>
+</html>
